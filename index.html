@@ -3,62 +3,61 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Zayon Streetwear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>ZAYON Streetwear - Da rua para você</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-
-
     <header class="headerdosite">
         <div class="headercontainer">
             <div class="logoheader">
-                <h1 class="logozayom">ZAYOM</h1>
-                <h1 class="logozayom1">ZAYOM</h1>
+                <h1 class="logozayom">ZAYON</h1>
+                <h1 class="logozayom1">ZAYON</h1>
             </div>
+            
+            <!-- Menu Hamburger para Mobile -->
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
             <nav class="menu">
                 <ul>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- SEÇÃO HOME -->
+    <section id="home">
+        <img src="imagens/street.jpg" class="imagemtopo" alt="ZAYON Streetwear" />
 
-    <img src="imagens/street.jpg" class="imagemtopo" alt="Descrição da imagem" />
-
-    <div class="paginacontainer">
+        <div class="paginacontainer">
         <div class="titulo-container">
-            <h1 class="titulo-back">ZAYOM</h1>
-            <h1 class="titulo-front">ZAYOM</h1>
+            <h1 class="titulo-back">ZAYON</h1>
+            <h1 class="titulo-front">ZAYON</h1>
         </div>
 
         <h2>Streetwear de verdade</h2>
         <h4>Parceiro oficial da Shopee. Confiança, entrega rápida e preços acessíveis.</h4>
 
         <div class="botoes-container">
-            <button class="btn comprar">Comprar Agora</button>
-            <button class="btn conhecer">Conheça a marca</button>
+            <a href="#produtos" class="btn comprar">Comprar Agora</a>
+            <a href="#contato" class="btn conhecer">Fale Conosco</a>
         </div>
 
         <p>"Da rua para você: estilo, conforto, e atitude em cada peça."</p>
 
         <h2>Nossa história</h2>
-        <p>ZAYON nasceu nas ruas, inspirada pela liberdade de expressão, arte urbana e pela cultura autêntica do hip-hop
-            e
-            skate.</p>
+        <p>ZAYON nasceu nas ruas, inspirada pela liberdade de expressão, arte urbana e pela cultura autêntica do hip-hop e skate.</p>
 
-        <p>Nossa missão é democratizar o streetwear de qualidade, levando roupas com estilo e atitude a preços justos
-            para
-            todos.
-            Através da nossa parceria com a Shopee, garantimos que o verdadeiro streetwear chegue até você com confiança
-            e
-            rapidez.</p>
+        <p>Nossa missão é democratizar o streetwear de qualidade, levando roupas com estilo e atitude a preços justos para todos. Através da nossa parceria com a Shopee, garantimos que o verdadeiro streetwear chegue até você com confiança e rapidez.</p>
 
         <h2>"Da rua para você: estilo, conforto e atitude em cada peça."</h2>
 
@@ -90,28 +89,210 @@
 
         </div>
 
-
-        <h1>Produtos em destaque</h1>
-        <h3>Descubra as peças que definem o streetwear autêntico</h3>
-
         <h1>Por que ZAYON?</h1>
         <h3>Mais que roupas, uma conexão com as ruas</h3>
-
         <p>"ZAYON não é só uma marca, é um movimento que conecta jovens através do streetwear autêntico."</p>
-    </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PRODUTOS -->
+    <section id="produtos">
+        <div class="paginacontainer">
+            <h1 class="titulo-pagina">Produtos em Destaque</h1>
+            <h3>Descubra as peças que definem o streetwear autêntico</h3>
+            
+            <div class="categorias">
+                <button class="categoria-btn ativo" data-categoria="todos">Todos</button>
+                <button class="categoria-btn" data-categoria="camisetas">Camisetas</button>
+                <button class="categoria-btn" data-categoria="calcas">Calças</button>
+                <button class="categoria-btn" data-categoria="acessorios">Acessórios</button>
+            </div>
+
+            <div class="produtos-grid">
+                <div class="produto-item" data-categoria="camisetas">
+                    <div class="produto-imagem">
+                        <img src="imagens/street.jpg" alt="Camiseta ZAYON">
+                        <div class="produto-overlay"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Camiseta ZAYON Classic</h3>
+                        <p class="produto-descricao">Estilo urbano com qualidade premium</p>
+                        <p class="produto-preco">R$ 89,90</p>
+                        <div class="produto-acoes">
+                            <a href="https://s.shopee.com.br/2qKteQdxQT" target="_blank" class="btn btn-comprar-produto">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto-item" data-categoria="camisetas">
+                    <div class="produto-imagem">
+                        <img src="imagens/street.jpg" alt="Camiseta Skate">
+                        <div class="produto-overlay"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Camiseta ZAYON Skate</h3>
+                        <p class="produto-descricao">Inspirada na cultura do skate</p>
+                        <p class="produto-preco">R$ 94,90</p>
+                        <div class="produto-acoes">
+                            <a href="https://s.shopee.com.br/2qKteQdxQT" target="_blank" class="btn btn-comprar-produto">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto-item" data-categoria="calcas">
+                    <div class="produto-imagem">
+                        <img src="imagens/street.jpg" alt="Calça ZAYON">
+                        <div class="produto-overlay"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Calça ZAYON Street</h3>
+                        <p class="produto-descricao">Conforto e estilo nas ruas</p>
+                        <p class="produto-preco">R$ 149,90</p>
+                        <div class="produto-acoes">
+                            <a href="https://s.shopee.com.br/2qKteQdxQT" target="_blank" class="btn btn-comprar-produto">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto-item" data-categoria="acessorios">
+                    <div class="produto-imagem">
+                        <img src="imagens/street.jpg" alt="Boné ZAYON">
+                        <div class="produto-overlay"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Boné ZAYON Urban</h3>
+                        <p class="produto-descricao">Completa seu look streetwear</p>
+                        <p class="produto-preco">R$ 59,90</p>
+                        <div class="produto-acoes">
+                            <a href="https://s.shopee.com.br/2qKteQdxQT" target="_blank" class="btn btn-comprar-produto">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto-item" data-categoria="camisetas">
+                    <div class="produto-imagem">
+                        <img src="imagens/street.jpg" alt="Camiseta Hip-Hop">
+                        <div class="produto-overlay"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Camiseta ZAYON Hip-Hop</h3>
+                        <p class="produto-descricao">Cultura urbana em cada detalhe</p>
+                        <p class="produto-preco">R$ 99,90</p>
+                        <div class="produto-acoes">
+                            <a href="https://s.shopee.com.br/2qKteQdxQT" target="_blank" class="btn btn-comprar-produto">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="produto-item" data-categoria="acessorios">
+                    <div class="produto-imagem">
+                        <img src="imagens/street.jpg" alt="Mochila ZAYON">
+                        <div class="produto-overlay"></div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Mochila ZAYON Street</h3>
+                        <p class="produto-descricao">Estilo e funcionalidade</p>
+                        <p class="produto-preco">R$ 129,90</p>
+                        <div class="produto-acoes">
+                            <a href="https://s.shopee.com.br/2qKteQdxQT" target="_blank" class="btn btn-comprar-produto">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-produtos">
+                <h2>Não encontrou o que procura?</h2>
+                <p>Visite nossa loja na Shopee para ver todos os produtos</p>
+                <a href="https://s.shopee.com.br/2qKteQdxQT" target="_blank" class="btn comprar">Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato">
+        <div class="paginacontainer">
+            <div class="hero-contato">
+                <h1 class="titulo-pagina">Entre em Contato</h1>
+                <h3>Estamos aqui para ajudar! Fale conosco</h3>
+            </div>
+
+
+            <div class="faq-container">
+                <h2>Perguntas Frequentes</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Como faço para rastrear meu pedido?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Após a confirmação do pagamento, você receberá um email com o código de rastreamento. Você também pode acompanhar o status do seu pedido diretamente na sua conta da Shopee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Qual o prazo de entrega?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>O prazo de entrega varia de 3 a 7 dias úteis, dependendo da sua localização. Para regiões mais distantes, pode levar até 10 dias úteis.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Como funciona a troca ou devolução?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Você tem até 7 dias após receber o produto para solicitar troca ou devolução. Entre em contato conosco através do formulário acima ou pelo email contato@zayon.com.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-pergunta">
+                        <h3>Os produtos têm garantia?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-resposta">
+                        <p>Sim! Todos os nossos produtos têm garantia de 90 dias contra defeitos de fabricação. Em caso de problemas, entre em contato conosco.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="localizacao-container">
+                <h2>Nossa Localização</h2>
+                <div class="mapa-container">
+                    <div class="mapa-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Mapa da nossa localização</p>
+                        <p>Rua das Ruas, 123 - Vila Madalena, São Paulo/SP</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-contato">
+                <h2>Precisa de Ajuda Imediata?</h2>
+                <p>Para dúvidas urgentes sobre pedidos, entre em contato pelo WhatsApp</p>
+                <a href="https://wa.me/5511999999999" target="_blank" class="btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
 
     <footer class="footerdosite">
         <div class="footercontainer">
-
             <div class="footerleft">
                 <p>Parceiro oficial Shopee | Entrega rápida e confiável.</p>
-                <p>Contato: contato@zayom.com </p>
+                <p>Contato: contato@zayon.com </p>
             </div>
 
             <div class="footercenter">
-                <p>© 2025 ZAYOM Streetwear. Todos os direitos reservados.</p>
+                <p>© 2025 ZAYON Streetwear. Todos os direitos reservados.</p>
             </div>
-
             <div class="footerright">
                 <p>Siga-nos nas redes sociais:</p>
                 <div class="social-icons">
@@ -119,14 +300,11 @@
                     <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
                 </div>
-
             </div>
         </div>
-
-        </div>
     </footer>
-
-
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
