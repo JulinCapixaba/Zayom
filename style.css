@@ -19,6 +19,7 @@
         margin-top: 60px;
     }
 
+
     .headercontainer {
         background: url('imagens/grafite.avif') center center / cover no-repeat;
         padding: 0 24px;
@@ -27,6 +28,25 @@
         align-items: center;
         border: 5px solid #444;
         border-radius: 10px;
+    }
+
+    @media (max-width: 480px) {
+        .headercontainer {
+            flex-direction: column;
+            gap: -20px;
+            padding: 16px 24px;
+        }
+
+        .logoheader {
+            margin-bottom: 10px;
+        }
+
+        .menu ul {
+            gap: 12px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .logoheader {
@@ -54,6 +74,7 @@
         text-shadow: 10px 10px 20px black;
     }
 
+
     .menu ul {
         display: flex;
         gap: 32px;
@@ -74,6 +95,32 @@
     .menu a:hover {
         color: #e63946;
         text-shadow: 4px 4px 4px black;
+    }
+
+    @media (max-width: 768px) {
+        .menu ul {
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu a {
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .menu ul {
+            gap: 12px;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .menu a {
+            font-size: 0.9rem;
+            padding: 6px 0;
+        }
     }
 
     .paginacontainer {
@@ -111,6 +158,21 @@
         font-size: 1rem;
         text-shadow: 2px 2px 4px black;
     }
+
+    @media (max-width: 480px) {
+        .painel-fixo {
+            flex-direction: column;
+            gap: 10px;
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+
+        .painel-fixo .btn {
+            padding: 10px 16px;
+            font-size: 0.9rem;
+        }
+    }
+
 
 
     @keyframes slideDown {
@@ -154,7 +216,7 @@
         color: rgb(255, 0, 0);
         opacity: 0.6;
         z-index: 0;
-        font-size: 100px;
+        font-size: clamp(2rem, 10vw, 6rem);
         font-family: 'Rubik', sans-serif;
     }
 
@@ -162,7 +224,7 @@
         position: relative;
         color: white;
         z-index: 1;
-        font-size: 100px;
+        font-size: clamp(2rem, 10vw, 6rem);
         font-family: 'Rubik', sans-serif;
     }
 
@@ -271,12 +333,15 @@
     @media (max-width: 1024px) {
         .grid-produtos {
             grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
         }
     }
+
 
     @media (max-width: 600px) {
         .grid-produtos {
             grid-template-columns: 1fr;
+            gap: 16px;
         }
     }
 
@@ -325,7 +390,7 @@
     }
 
     .porquezayon {
-        font-size: 40px;
+        font-size: clamp(2rem, 8vw, 4rem);
     }
 
     .depoimentos-container {
@@ -434,6 +499,23 @@
         padding-top: 24px;
     }
 
+    @media (max-width: 768px) {
+        .footercontainer {
+            flex-direction: column;
+            text-align: center;
+            gap: 24px;
+        }
+
+        .footerleft,
+        .footerright {
+            text-align: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+        }
+    }
+
     .social-icons {
         display: flex;
         gap: 16px;
@@ -457,4 +539,26 @@
 
     .a {
         text-decoration: none;
+    }
+
+    .back-to-top-container {
+        text-align: center;
+        margin: 20px 24px;
+    }
+
+    .back-to-top {
+        text-align: center;
+        background-color: #e63946;
+        color: white;
+        padding: 10px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .back-to-top:hover {
+        transform: scale(1.1);
     }
