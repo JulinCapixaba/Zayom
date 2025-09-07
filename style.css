@@ -33,7 +33,7 @@
         display: inline-block;
     }
 
-    .logozayom {
+    .logozayon {
         position: absolute;
         top: 4px;
         left: 4px;
@@ -44,7 +44,7 @@
         font-family: 'Rubik', sans-serif;
     }
 
-    .logozayom1 {
+    .logozayon1 {
         position: relative;
         color: white;
         z-index: 1;
@@ -255,7 +255,7 @@
         text-align: center;
     }
 
-    .lojazayomestilo {
+    .lojazayonestilo {
         margin-top: -30px;
         font-size: 30px;
     }
@@ -323,7 +323,7 @@
         font-weight: bold;
     }
 
-    .porquezayom {
+    .porquezayon {
         font-size: 40px;
     }
 
